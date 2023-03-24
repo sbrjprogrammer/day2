@@ -1,0 +1,23 @@
+.recordbox{
+
+    background-color: orangered;
+    width: 100px;
+    height: 130px;
+    color: white;
+}
+.parent{
+    background-color: #ECF0F5;
+}
+
+.chart-container{
+    height: 100%;
+    width: 500px;
+    margin-left: 3rem;
+    background-color: #F0F8FF;
+}
+
+
+.chart-container>h4{
+    color: rgb(47, 120, 222);
+    
+}
