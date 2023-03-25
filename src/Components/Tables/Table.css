@@ -1,7 +1,10 @@
 .Table-Container{
    overflow: auto;
    font-size: 4rem;
+   width: 50vh;
 }
+
+
 .table{
     font-size: xx-small;
 }

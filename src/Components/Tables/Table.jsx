@@ -2,10 +2,10 @@ import React from 'react'
 
 function Table() {
   return (
-  <div className='Table-Container'>
+  <div className='Table-Container table-responsive'>
 
     
-        <table className="table">
+        <table className="table ">
           <thead className="thead-dark">
             <tr>
               <th scope="col">#</th>

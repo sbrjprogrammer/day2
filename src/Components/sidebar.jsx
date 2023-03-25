@@ -87,8 +87,9 @@ const Sidebar = ({ children }) => {
             </a>
             <ul className="submenu"  style={{ display: isOpen ? "block" : "none" }}>
              <li><a className="link" href="#">Area</a></li>
-             <li><a className="link" href="#">Attendance policy</a></li>
-             <li><a className="link" href="#">Option 3</a></li>
+             <li><NavLink className="link" to={"/form1"}>Attendance policy</NavLink></li>
+             <li><NavLink className="link" to={"/BAShops"}>BAShops</NavLink></li>
+            
            
             </ul>
             
