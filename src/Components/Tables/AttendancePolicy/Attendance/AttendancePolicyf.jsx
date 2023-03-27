@@ -48,7 +48,7 @@ function AttendancePolicyf() {
     <h3 className="pb-2"></h3>
     <div className="table-responsive" id="no-more-tables">
         
-      <table className="table bg-white">
+      <table className="table bg-white table-bordered">
         <thead className="bg-primary text-light">
           <tr>
           <th scope="col">#</th>

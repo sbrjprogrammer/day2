@@ -86,9 +86,13 @@ const Sidebar = ({ children }) => {
               Setup
             </a>
             <ul className="submenu"  style={{ display: isOpen ? "block" : "none" }}>
-             <li><a className="link" href="#">Area</a></li>
+            <li><NavLink className="link" to={"/Area"}>Area</NavLink></li>
              <li><NavLink className="link" to={"/form1"}>Attendance policy</NavLink></li>
              <li><NavLink className="link" to={"/BAShops"}>BAShops</NavLink></li>
+             <li><NavLink className="link" to={"/Company"}>Company</NavLink></li>
+             <li><NavLink className="link" to={"/Customer"}>Customer</NavLink></li>
+             <li><NavLink className="link" to={"/CustomerCategory"}>Customer Category</NavLink></li>
+             <li><NavLink className="link" to={"/InstaUploader"}>Instagram Uploader</NavLink></li>
             
            
             </ul>

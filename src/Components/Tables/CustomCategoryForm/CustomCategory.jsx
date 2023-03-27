@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
+import "./CustomCategory.css"
 
 import { AiFillEdit,AiTwotoneDelete } from "react-icons/ai";
 
-function BAShops() {
+function CustomerCategory(){
     let [data,setdata]=useState([])
    let [items,setItem]= useState({})
     let[edit,setEdit]=useState(false)
@@ -45,17 +46,17 @@ function BAShops() {
    <div className='row'>
     <div className='col-md-8'></div>
     <div className='col-md-3'></div>
-    <div className='col-md-1 mb-3'><NavLink to={"/BAform"}><button type="button" class="btn btn-dark">New</button></NavLink></div>
+    <div className='col-md-1 mb-3'><NavLink to={"/customerCategoryForm"}><button type="button" class="btn btn-dark">New</button></NavLink></div>
    </div>
      
      
      
-      <table className="table bg-white table-bordered">
+      <table border="1"  className="table bg-white  table-bordered">
         <thead className="bg-primary text-light">
           <tr>
           <th scope="col">#</th>
-          <th scope="col">Employee Type</th>
-          <th scope="col">Min Login</th>
+          <th scope="col"  style={{width:"70%",justifyContent:"center",textAlign:"center"}} >Customer Category</th>
+          
           <th scope="col">Edit</th>
           <th scope="col">Delete</th>
           
@@ -66,8 +67,22 @@ function BAShops() {
 
        <tr>
             <td data-title=""></td>
-            <td data-title=""><input type="text" onChange={(e)=>setItem({...items,employeetype:e.target.value})} /></td>
-            <td data-title=""><input type="text" onChange={(e)=>setItem({...items,MinLogin:e.target.value})} /></td>
+            <td data-title=""><input type="text" size={"120"} onChange={(e)=>setItem({...items,employeetype:e.target.value})} /></td>
+
+
+
+            <td data-title=""></td>
+            <td> </td>
+           
+          </tr>
+
+
+
+
+          
+       <tr>
+            <td data-title="">1</td>
+            <td data-title="">Baby Shop</td>
 
 
             <td data-title=""><AiFillEdit/></td>
@@ -109,4 +124,4 @@ function BAShops() {
   )
 }
 
-export default BAShops
+export default CustomerCategory
